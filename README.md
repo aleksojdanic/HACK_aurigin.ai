@@ -13,23 +13,14 @@ and a simple RandomForest baseline model.
 
 HACK_aurigin.ai/
 ├── src/
-
 │ ├── main.py # Pipeline entry point
-
 │ ├── hf_utils.py # Dataset loader + MFCC feature extraction
-
 │ ├── hf_trainer.py # Training + submission utilities
-
 │ ├── model.py # Model definitions
-
 │ ├── trainer.py # Training helpers
-
 │ └── utils.py # General utilities
-
 ├── requirements.txt
-
 ├── hackathon_plan.txt
-
 └── .gitignore
 
 
