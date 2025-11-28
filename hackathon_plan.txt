@@ -1,0 +1,64 @@
+Audio Deepfake Detection – Implementierungsplan
+
+Ziel
+Jede Audio-Datei klassifizieren als:
+- 0.0 = real
+- 1.0 = AI-generated
+
+Bewertung durch:
+- F1-Score
+- zusätzlich Preis für kreative Implementierung
+
+Implementieren:
+1) Audio-Loading + Feature Extraction (utils.py)
+- librosa.load()
+- MFCCs, Mel-Spectrogram, Centroid, Bandwidth, ZCR, Chroma
+
+
+1. Grundidee für Schritt 1
+Für jede Audio-Datei wollen wir z.B.:
+
+librosa.load() → Signal + Samplingrate
+
+Features pro Frame (Zeitachse):
+
+- MFCCs
+- Mel-Spectrogram
+- Spectral Centroid
+- Spectral Bandwidth
+- Zero-Crossing-Rate
+
+daraus statistische Kennzahlen machen:
+
+- mean, std (optional: min, max) über die Zeit
+→ ergibt einen festen Feature-Vektor pro Datei.
+
+
+
+
+
+
+2) Feature Engineering
+- Pitch Instability
+- Noise Fingerprint
+- High-frequency artifacts
+- Phase Coherence
+
+3) Modell-Baseline (model.py)
+- LogisticRegression, RandomForest, XGBoost
+oder CNN auf Mel-Spectrograms
+
+4) Training Pipeline (trainer.py)
+- Daten laden
+- Features bauen
+- Modell trainieren
+- F1 berechnen
+- Modell speichern
+
+5) Submission (submission.csv)
+Format:
+id,label
+
+6) EDA Notebook
+- Waveform plots, Mel-Spectrograms
+
