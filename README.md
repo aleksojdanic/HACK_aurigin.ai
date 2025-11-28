@@ -45,13 +45,13 @@ pip install -r requirements.txt
 ```
 
 
-##📌 Notes
+## 📌 Notes
 
  - The original dataset was private and is not included in this repository.
  - No virtual environments, caches, or large files are tracked.
  - This repository is meant as a clean baseline for further development.
 
-##📝 License
+## 📝 License
 
 Created for the Aurigin.ai Hackathon 2025.
 Free to use and adapt.
