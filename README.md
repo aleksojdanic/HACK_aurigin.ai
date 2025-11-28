@@ -10,8 +10,9 @@ and a simple RandomForest baseline model.
 ---
 
 ## 📂 Project Structure
-
+```
 HACK_aurigin.ai/
+
 ├── src/
 │ ├── main.py # Pipeline entry point
 │ ├── hf_utils.py # Dataset loader + MFCC feature extraction
@@ -22,7 +23,7 @@ HACK_aurigin.ai/
 ├── requirements.txt
 ├── hackathon_plan.txt
 └── .gitignore
-
+```
 
 
 
