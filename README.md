@@ -13,14 +13,23 @@ and a simple RandomForest baseline model.
 
 HACK_aurigin.ai/
 ├── src/
+
 │ ├── main.py # Pipeline entry point
+
 │ ├── hf_utils.py # Dataset loader + MFCC feature extraction
+
 │ ├── hf_trainer.py # Training + submission utilities
+
 │ ├── model.py # Model definitions
+
 │ ├── trainer.py # Training helpers
+
 │ └── utils.py # General utilities
+
 ├── requirements.txt
+
 ├── hackathon_plan.txt
+
 └── .gitignore
 
 
@@ -34,8 +43,6 @@ ignored via `.gitignore`.
 
 ## 🚀 Setup & Installation
 
-### 1. Clone the repository
-
 ```bash
 git clone https://github.com/aleksojdanic/HACK_aurigin.ai.git
 cd HACK_aurigin.ai
@@ -46,13 +53,13 @@ pip install -r requirements.txt
 ```
 
 
-📌 Notes
+##📌 Notes
 
  - The original dataset was private and is not included in this repository.
  - No virtual environments, caches, or large files are tracked.
  - This repository is meant as a clean baseline for further development.
 
-📝 License
+##📝 License
 
 Created for the Aurigin.ai Hackathon 2025.
 Free to use and adapt.
